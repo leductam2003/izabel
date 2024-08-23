@@ -18,6 +18,7 @@
             border-color: hsl(0, 0%, 1%);
             color: rgb(0, 0, 0)
         }
+
         #postComment:hover {
             background-color: #fff;
             border-color: hsl(0, 0%, 1%);
@@ -27,6 +28,14 @@
         a:hover {
             text-decoration: underline;
             color: #007bff;
+        }
+
+        .comment-container {
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -68,8 +77,8 @@
                                     <span>Telegram</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://pump.fun/E9oh1HAVFzSMvEuEp9J9N8tkaNJh9LvhpW1wyvUW7bz4" target="_blank">
-                                    <span>Pump.fun</span></a>
+                                <a class="nav-link" href="" target="_blank">
+                                    <span>SUNPUMP</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://dexscreener.com/" target="_blank">
@@ -87,7 +96,7 @@
                     <div class="px-3 pt-4 pb-2">
                         <div class="d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
-                                <img style="width:150px" class="me-3 avatar-sm rounded-circle" src="./assets/Izabel.jpg"
+                                <img style="width:150px" class="me-3 avatar-sm rounded-circle" src="/assets/Izabel.jpg"
                                     alt="Izabel Avatar">
                                 <div>
                                     <h3 class="card-title mb-0"><a href="#"> Izabel
@@ -122,7 +131,7 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <img style="width:50px" class="me-2 avatar-sm rounded-circle"
-                                        src="./assets/Izabel.jpg" alt="Izabel Avatar">
+                                        src="/assets/Izabel.jpg" alt="Izabel Avatar">
                                     <div>
                                         <h5 class="card-title mb-0"><a href="#"> Izabel
                                             </a></h5>
@@ -133,7 +142,7 @@
                         <div class="card-body">
                             <p class="fs-6 fw-light text-muted">
                                 🚀 Izabel Tokenomics 🚀
-                                We're thrilled to announce the launch of Izabel on pump.fun with:
+                                We're thrilled to announce the launch of Izabel on SUNPUMP with:
                                 A total supply of 1 billion tokens! 🔥
                                 100% of Liquidity Pool (LP) is burned
                                 0% taxes—making Izabel a truly community-driven project. No fees, just pure growth!
@@ -150,29 +159,31 @@
                             </div>
                             <div>
                                 <div class="mb-3">
-                                    <textarea id="commentText" class="fs-6 form-control" rows="1"></textarea>
+                                    <textarea id="username" class="fs-6 form-control" rows="1"
+                                        placeholder="username"></textarea>
+                                    <textarea id="commentText" class="fs-6 form-control" rows="3"
+                                        placeholder="comment"></textarea>
                                 </div>
                                 <div>
                                     <button id="postComment" class="btn btn-primary btn-sm"> Post Comment </button>
                                 </div>
 
                                 <hr>
-                                <div id="commentSection">
+                                <div id="commentSection" class="comment-container">
                                     <div class="d-flex align-items-start">
                                         <img style="width:35px" class="me-2 avatar-sm rounded-circle"
-                                            src="./assets/Izabel.jpg" alt="Izabel Avatar">
+                                            src="/assets/Izabel.jpg" alt="Izabel Avatar">
                                         <div class="w-100">
                                             <div class="d-flex justify-content-between">
                                                 <h6 class="">Izabel
                                                 </h6>
-                                                <small class="fs-6 fw-light text-muted"> 1 minute ago</small>
                                             </div>
                                             <p class="fs-6 mt-3 fw-light">
-                                                CONTRACT ADDRESS: E9oh1HAVFzSMvEuEp9J9N8tkaNJh9LvhpW1wyvUW7bz4
+                                                CONTRACT ADDRESS: XXXXXXX
                                             </p>
                                         </div>
                                     </div>
-                                </div> <!-- End of commentSection -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,35 +198,42 @@
                         <div class="hstack gap-2 mb-3">
                             <div class="avatar">
                                 <a href="#!"><img class="avatar-img rounded-circle"
-                                        src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=Izabel" alt=""></a>
+                                        src="https://pbs.twimg.com/profile_images/1754409055798587392/hmyr9DFd_400x400.jpg"
+                                        style="width:50px" alt=""></a>
                             </div>
                             <div class="overflow-hidden">
-                                <a class="h6 mb-0" href="#!">pump.fun</a>
-                                <p class="mb-0 small text-truncate">@pump.fun</p>
+                                <a class="h6 mb-0" href="https://x.com/sunpumpmeme" target="_blank">sunpumpmeme</a>
+                                <p class="mb-0 small text-truncate">@sunpumpmeme</p>
                             </div>
-                            <a class="btn btn-primary btn-sm ms-auto" href="#!">Follow</a>
+                            <a class="btn btn-primary btn-sm ms-auto" href="https://x.com/sunpumpmeme"
+                                target="_blank">Follow</a>
                         </div>
                         <div class="hstack gap-2 mb-3">
                             <div class="avatar">
                                 <a href="#!"><img class="avatar-img rounded-circle"
-                                        src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=Izabel" alt=""></a>
+                                        src="https://pbs.twimg.com/profile_images/1826637284885585920/8EZWhpHS_400x400.jpg"
+                                        style="width:50px" alt=""></a>
                             </div>
                             <div class="overflow-hidden">
-                                <a class="h6 mb-0" href="#!">Jujax</a>
-                                <p class="mb-0 small text-truncate">@jujax</p>
+                                <a class="h6 mb-0" href="https://x.com/justinsuntron" target="_blank">H.E. Justin Sun
+                                    孙宇晨(hiring)</a>
+                                <p class="mb-0 small text-truncate">@justinsuntron</p>
                             </div>
-                            <a class="btn btn-primary btn-sm ms-auto" href="#!">Follow</a>
+                            <a class="btn btn-primary btn-sm ms-auto" href="https://x.com/justinsuntron"
+                                target="_blank">Follow</a>
                         </div>
                         <div class="hstack gap-2 mb-3">
                             <div class="avatar">
                                 <a href="#!"><img class="avatar-img rounded-circle"
-                                        src="https://api.dicebear.com/6.x/fun-emoji/svg?seed=Izabel" alt=""></a>
+                                        src="https://pbs.twimg.com/profile_images/1761904730668675072/v98T7vRL_400x400.jpg"
+                                        alt="" style="width: 50px;"></a>
                             </div>
                             <div class="overflow-hidden">
-                                <a class="h6 mb-0" href="#!">Jex.sol</a>
-                                <p class="mb-0 small text-truncate">@jex.sol</p>
+                                <a class="h6 mb-0" href="#!">TRON DAO</a>
+                                <p class="mb-0 small text-truncate">@trondao</p>
                             </div>
-                            <a class="btn btn-primary btn-sm ms-auto" href="#!">Follow</a>
+                            <a class="btn btn-primary btn-sm ms-auto" href="https://x.com/trondao"
+                                target="_blank">Follow</a>
                         </div>
                     </div>
                     <div class="card-footer text-center py-2">
@@ -235,50 +253,133 @@
             followBtn.classList.toggle('btn-primary', !isFollowing);
             followBtn.classList.toggle('btn-success', isFollowing);
         });
-        document.getElementById('postComment').addEventListener('click', function() {
-            const commentText = document.getElementById('commentText').value.trim();
-            if (commentText) {
-                const commentSection = document.getElementById('commentSection');
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentSection = document.getElementById('commentSection');
+            const chatSection = document.getElementById('chatSection');
+            const commentTextBox = document.getElementById('commentText');
+            const username = document.getElementById('username');
+            const postCommentButton = document.getElementById('postComment');
 
-                // Create new comment elements
-                const newCommentDiv = document.createElement('div');
-                newCommentDiv.className = 'd-flex align-items-start mb-3';
+            fetch('api/messages')
+                .then(response => response.json())
+                .then(messages => {
+                    messages.forEach(message => {
+                        const timestamp = new Date(message.timestamp);
+                        const chatElement = createElement(message.user, message.message, timestamp, 'comment');
+                        commentSection.appendChild(chatElement);
+                    });
+                });
 
-                const img = document.createElement('img');
-                img.style.width = '35px';
-                img.className = 'me-2 avatar-sm rounded-circle';
-                img.src = './assets/Luigi.jpg';
+            postCommentButton.addEventListener('click', function () {
+                const commentText = commentTextBox.value.trim();
+                if (commentText) {
+                    // Create new comment element
+                    const timestamp = new Date(); // Set timestamp to the current time
+                    const newComment = createElement(username.value.trim(), commentText, timestamp, 'comment');
+                    commentSection.appendChild(newComment);
+                    commentTextBox.value = '';
 
-                const commentContentDiv = document.createElement('div');
-                commentContentDiv.className = 'w-100';
+                    fetch('api/messages', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            user: 'Luigi',
+                            message: commentText,
+                        }),
+                    });
+                }
+            });
+            function createElement(user, text, timestamp, type) {
+                const newDiv = document.createElement('div');
+                newDiv.className = type === 'chat' ? 'chat-message' : 'd-flex align-items-start mb-3';
 
-                const commentHeaderDiv = document.createElement('div');
-                commentHeaderDiv.className = 'd-flex justify-content-between';
+                if (type === 'chat') {
+                    const userNameSpan = document.createElement('span');
+                    userNameSpan.className = 'user-name';
+                    userNameSpan.textContent = `${user}: `;
 
-                const commenterName = document.createElement('h6');
-                commenterName.innerText = 'Luigi';
+                    const messageTextP = document.createElement('p');
+                    messageTextP.textContent = text;
 
-                const timeStamp = document.createElement('small');
-                timeStamp.className = 'fs-6 fw-light text-muted';
-                timeStamp.innerText = 'Just now';
+                    const timeStampSpan = document.createElement('span');
+                    timeStampSpan.className = 'timestamp';
+                    timeStampSpan.textContent = ` ${timeAgo(timestamp)}`;
 
-                const commentBody = document.createElement('p');
-                commentBody.className = 'fs-6 mt-3 fw-light';
-                commentBody.innerText = commentText;
+                    messageTextP.appendChild(timeStampSpan);
 
-                commentHeaderDiv.appendChild(commenterName);
-                commentHeaderDiv.appendChild(timeStamp);
+                    newDiv.appendChild(userNameSpan);
+                    newDiv.appendChild(messageTextP);
+                } else {
+                    const img = document.createElement('img');
+                    img.style.width = '35px';
+                    img.className = 'me-2 avatar-sm rounded-circle';
+                    img.src = '/assets/Luigi.jpg';
 
-                commentContentDiv.appendChild(commentHeaderDiv);
-                commentContentDiv.appendChild(commentBody);
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'w-100';
 
-                newCommentDiv.appendChild(img);
-                newCommentDiv.appendChild(commentContentDiv);
+                    const headerDiv = document.createElement('div');
+                    headerDiv.className = 'd-flex justify-content-between';
 
-                commentSection.appendChild(newCommentDiv);
-                document.getElementById('commentText').value = '';
+                    const commenterName = document.createElement('h6');
+                    commenterName.innerText = user;
+
+                    const timeStamp = document.createElement('small');
+                    timeStamp.className = 'fs-6 fw-light text-muted';
+                    timeStamp.innerText = timestamp ? timeAgo(timestamp) : 'Just now';
+
+                    const body = document.createElement('p');
+                    body.className = 'fs-6 mt-3 fw-light';
+                    body.innerText = text;
+
+                    headerDiv.appendChild(commenterName);
+                    headerDiv.appendChild(timeStamp);
+
+                    contentDiv.appendChild(headerDiv);
+                    contentDiv.appendChild(body);
+
+                    newDiv.appendChild(img);
+                    newDiv.appendChild(contentDiv);
+                }
+
+                return newDiv;
             }
+            function timeAgo(timestamp) {
+                const now = new Date();
+                const diffInSeconds = Math.floor((now - timestamp) / 1000);
+
+                if (diffInSeconds < 0) {
+                    return 'in the future';
+                }
+
+                const intervals = [
+                    { label: 'second', value: 60 },
+                    { label: 'minute', value: 60 },
+                    { label: 'hour', value: 24 },
+                    { label: 'day', value: 30 },
+                    { label: 'month', value: 12 },
+                    { label: 'year', value: Infinity }
+                ];
+
+                let intervalIndex = 0;
+                let intervalValue = intervals[intervalIndex].value;
+                let count = diffInSeconds;
+
+                while (count >= intervalValue && intervalIndex < intervals.length - 1) {
+                    count /= intervalValue;
+                    intervalIndex++;
+                    intervalValue = intervals[intervalIndex].value;
+                }
+
+                count = Math.floor(count);
+                const label = intervals[intervalIndex].label;
+
+                return `${count} ${label}${count > 1 ? 's' : ''} ago`;
+            }
+
         });
+
+
     </script>
 </body>
 
