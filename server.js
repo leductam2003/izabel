@@ -25,6 +25,9 @@ app.get('/api/messages', async (req, res) => {
     const messages = await Chat.find().sort({ timestamp: 1 });
     res.json(messages);
 });
+app.get('/api/test', async (req, res) => {
+    res.json({result: "Working"});
+});
 
 app.post('/api/messages', async (req, res) => {
     const newMessage = new Chat(req.body);
