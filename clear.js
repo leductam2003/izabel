@@ -4,7 +4,6 @@ async function clearDatabase() {
   try {
     // Connect to MongoDB
     await mongoose.connect('mongodb+srv://leductam2003:011103Tam@cluster0.xerfp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-      useNewUrlParser: true,
       useUnifiedTopology: true,
     });
 
